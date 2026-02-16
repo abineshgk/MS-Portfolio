@@ -12,7 +12,7 @@ function Projects() {
             <img src="/project1.png" alt="E-commerce Project" />
             <img src="/project2.png" alt="Project Screenshot 2" />
             <div className="overlay">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://ecommerrcee.netlify.app/" target="_blank" rel="noopener noreferrer">
                 Live Demo
               </a>
               <a href="https://github.com/abineshgk/E-Commerce" target="_blank" rel="noopener noreferrer">
