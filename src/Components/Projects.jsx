@@ -43,7 +43,7 @@ function Projects() {
             <img src="/project3.png" alt="E-commerce Project" />
             <img src="/project4.png" alt="Project Screenshot 2" />
             <div className="overlay">
-              <a href="https://notewebb.netlify.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://notes-web-783b.onrender.com/" target="_blank" rel="noopener noreferrer">
                 Live Demo
               </a>
               <a href="https://github.com/abineshgk/Thinkboard" target="_blank" rel="noopener noreferrer">
