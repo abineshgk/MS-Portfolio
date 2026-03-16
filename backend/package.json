@@ -58,6 +58,7 @@
     "qs": "^6.15.0",
     "range-parser": "^1.2.1",
     "raw-body": "^3.0.2",
+    "resend": "^6.9.3",
     "router": "^2.2.0",
     "safer-buffer": "^2.1.2",
     "send": "^1.2.1",
@@ -74,7 +75,6 @@
     "vary": "^1.1.2",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
