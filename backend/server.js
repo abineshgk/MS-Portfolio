@@ -10,26 +10,38 @@ app.use(express.json())
 
 app.post("/contact", async (req,res)=>{
 
+try {
+
 const {name,email,message} = req.body
 
 const transporter = nodemailer.createTransport({
- service:"gmail",
- auth:{
-  user:process.env.EMAIL_USER,
-  pass:process.env.EMAIL_PASS
+ host: "smtp.gmail.com",
+ port: 587,
+ secure: false,
+ auth: {
+   user: process.env.EMAIL_USER,
+   pass: process.env.EMAIL_PASS
  }
 })
 
 await transporter.sendMail({
  from: email,
- to:"abineshgk2005@gmail.com",
+ to:process.env.EMAIL_USER,
  subject:"New Portfolio Message",
  text:`Name: ${name}
 Email: ${email}
 Message: ${message}`
 })
 
-res.send("Message Sent")
+res.status(200).json({success:true})
+
+} catch(error){
+
+console.log(error)
+
+res.status(500).json({success:false})
+
+}
 
 })
 
